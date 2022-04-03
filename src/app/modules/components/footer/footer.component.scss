@@ -1,0 +1,21 @@
+@import 'colors';
+@import 'variables';
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: $footer-heigth;
+  background-color: $primary-color;
+  div {
+    display: block;
+    color: $white;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+:host {
+  display: inline-block;
+}

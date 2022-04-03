@@ -1,0 +1,38 @@
+@import 'colors';
+@import 'variables';
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $primary-color;
+  z-index: 3;
+
+  nav {
+    ul {
+      display: flex;
+      height: $header-heigth;
+      li {
+        display: flex;
+
+        button {
+          width: 100%;
+          color: $white;
+
+          img {
+            width: 20px;
+          }
+
+          &:hover {
+            background-color: $primary-color-tint;
+          }
+        }
+      }
+    }
+  }
+}
+
+:host {
+  display: inline-block;
+}
