@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Peas",
+    "description": "Peas are not actually a vegetable but a small, edible legume and as such they belong to the same family as lentils, chickpeas, beans and peanuts. Peas grow in pods on a vine and once the pod is plump, they are ripe for picking. In the UK, peas are in season from May to October, but the majority of peas we consume are frozen, making them an all year staple.",
+    "unit": "bag",
+    "value": 0.95
+  },
+  {
+    "id": 2,
+    "name": "Eggs",
+    "description": "Eggs contain multiple proteins that gel at different temperatures within the yolk and the white, and the temperature determines the gelling time. Egg yolk becomes a gel, or solidifies, between 61 and 70 °C (142 and 158 °F). Egg white gels at different temperatures: 60 to 73 °C (140 to 163 °F). The white contains exterior albumen which sets at the highest temperature. In practice, in many cooking processes the white gels first because it is exposed to higher temperatures for longer.",
+    "unit": "dozen",
+    "value": 2.1
+  },
+  {
+    "id": 3,
+    "name": "Milk",
+    "description": "Milk is a nutrient-rich liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals (including breastfed human infants) before they are able to digest solid food.[1] Early-lactation milk, which is called colostrum, contains antibodies that strengthen the immune system, and thus reduces the risk of many diseases. Milk contains many other nutrients,[2] including protein and lactose.",
+    "unit": "bottle",
+    "value": 1.3
+  },
+  {
+    "id": 4,
+    "name": "Beans",
+    "description": "A bean is the seed of one of several genera of the flowering plant family Fabaceae, which are used as vegetables for human or animal food.[1] They can be cooked in many different ways,[2] including boiling, frying, and baking, and are used in many traditional dishes throughout the world.",
+    "unit": "can",
+    "value": 0.73
+  }
+]
