@@ -1,0 +1,35 @@
+@import 'colors';
+
+section {
+  display: flex;
+  flex-direction: column;
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
+  }
+
+  & > div {
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+    
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 10px;
+      a {
+        color: $primary-color;
+      }
+      app-controls {
+        padding-top: 10px;
+      }
+    }
+  }
+}
+
+:host {
+  display: block;
+}
