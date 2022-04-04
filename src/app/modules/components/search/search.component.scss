@@ -1,0 +1,29 @@
+@import 'colors';
+
+section {
+  padding: 12px;
+  div {
+    display: flex;
+    border: 1px solid $primary-color;
+    padding: 0;
+    input {
+      border-right: 1px;
+      border-color: $primary-color;
+      border-style: solid;
+      padding: 10px;
+      flex-basis: 90%;
+    }
+    button {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      background-color: $primary-color;
+      flex-basis: 10%;
+    }
+  }
+}
+
+:host {
+  display: block;
+}

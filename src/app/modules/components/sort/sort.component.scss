@@ -1,0 +1,11 @@
+section {
+  text-align: right;
+  select {
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+}
+
+:host {
+  display: block;
+}

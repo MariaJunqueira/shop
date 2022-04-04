@@ -1,0 +1,7 @@
+<section>
+  <label for="">Order by: </label>
+  <select [(ngModel)]="sort" (ngModelChange)="onSortChange()">
+    <option value="lowest_price">Lowest price</option>
+    <option value="biggest_price">Biggest price</option>
+  </select>
+</section>
