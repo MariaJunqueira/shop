@@ -1,0 +1,23 @@
+@import 'colors';
+
+div {
+  input {
+    padding: 10px 2px 10px 10px;
+    border: 1px solid #ddd;
+    width: 50px;
+  }
+
+  span {
+    padding: 10px;
+  }
+
+  button {
+    padding: 10px;
+    border: 2px solid $secondary-color;
+    color: $secondary-color;
+  }
+}
+
+:host {
+  display: inline-block;
+}

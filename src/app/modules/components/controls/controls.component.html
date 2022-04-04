@@ -1,0 +1,5 @@
+<div>
+  <input type="number" placeholder="1" [(ngModel)]="quantity" (ngModelChange)="onQuantityChange()" />
+  <span>{{ product.unit }}</span>
+  <button (click)="addToBasket()"><b>Add to basket</b></button>
+</div>
