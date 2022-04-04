@@ -1,6 +1,9 @@
 export class Currency {
-  id: number;
-  name: string;
   symbol: string;
-  factor: number;
+  quote: number;
+
+  constructor(symbol: string, quote: number) {
+    this.symbol = symbol;
+    this.quote = quote;
+  }
 }
