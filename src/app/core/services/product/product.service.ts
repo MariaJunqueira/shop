@@ -1,13 +1,14 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-import { Product } from '@models/product';
+import { PRODUCTS } from 'assets/data/products.data';
+import { of } from 'rxjs';
 
 @Injectable()
 export class ProductService {
-  constructor(private http: HttpClient) { }
+  constructor() { }
 
   getAllProducts() {
-    return this.http.get<Product[]>('../../../../assets/data/products.json');
+    return of(PRODUCTS);
   }
+
 }
