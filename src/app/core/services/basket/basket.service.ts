@@ -11,6 +11,7 @@ export class BasketService {
   /**
    * @param product 
    * @param quantity 
+   * @public
    */
   addToBasket(product: Product, quantity: number) {
     const basket: Basket = new Basket(product, quantity);
@@ -21,16 +22,18 @@ export class BasketService {
   /**
    * Saves the products in the basket in the local storage
    * @param basket
+   * @private
    */
-  updateBasket(basket: Basket) {
+  private updateBasket(basket: Basket) {
     //TODO: send item to update in the backend
   }
 
   /**
    * Add a new item into the basket
    * @param basket 
+   * @private
    */
-  addNewItem(basket: Basket) {
+  private addNewItem(basket: Basket) {
     this.items.push(basket)
   }
 
@@ -38,8 +41,9 @@ export class BasketService {
    * Try to update a item in the basket, if the item was alread added previously.
    * @param basket 
    * @returns true if the item was updated or false if it is not in the basket
+   * @private
    */
-  updateItem(basket: Basket): boolean {
+  private updateItem(basket: Basket): boolean {
     let updated: boolean = false;
     this.items.map((item: Basket) => {
       if (item.getProduct().id === basket.getProduct().id) {
@@ -53,6 +57,7 @@ export class BasketService {
   /**
    * Remove a item by product from basket
    * @param product 
+   * @public
    */
   removeItem(product: Product) {
     this.items.filter((item: Basket) => item.getProduct().id !== product.id);
@@ -61,6 +66,7 @@ export class BasketService {
   /**
    * Get all itens added in the basket
    * @returns Basket[]
+   * @public
    */
   getItems(): Basket[] {
     return this.items;
@@ -69,6 +75,7 @@ export class BasketService {
   /**
   * Removes all itens added in the basket
   * @returns Basket[]
+   * @public
   */
   clearBasket() {
     this.items = [];
