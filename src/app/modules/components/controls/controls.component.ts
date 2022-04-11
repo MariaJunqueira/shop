@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
+
 import { Product } from '@models/product';
+import { BasketService } from '@services/basket/basket.service';
 
 @Component({
   selector: 'app-controls',
@@ -11,9 +13,10 @@ export class ControlsComponent {
 
   quantity: number = 1;
 
+  constructor(private basketService: BasketService) { }
+
   addToBasket() {
-    console.log(this.quantity)
-    // this.basketService.addToBasket(this.product, this.quantity);
+    this.basketService.addToBasket(this.product, this.quantity);
   }
 
   onQuantityChange() {
