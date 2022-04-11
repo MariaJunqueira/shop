@@ -13,7 +13,7 @@ export class LocalStorageService {
 
   set(key: string, value: any): boolean {
     if (this.storage) {
-      this.storage.setItem(key, value);
+      this.storage.setItem(key, JSON.stringify(value));
       return true;
     }
     return false;
@@ -21,8 +21,17 @@ export class LocalStorageService {
 
   get(key: string): any {
     if (this.storage) {
-      return this.storage.getItem(key);
+      return JSON.parse(this.storage.getItem(key));
     }
     return null;
   }
+
+  remove(key: string): boolean {
+    if (this.storage) {
+      this.storage.removeItem(key);
+      return true;
+    }
+    return false;
+  }
+
 }

@@ -1,0 +1,12 @@
+@import 'colors';
+
+$footer-heigth: 50px;
+$header-heigth: 50px;
+
+main {
+  padding: $footer-heigth 0 $header-heigth 0;
+}
+
+:host {
+  display: block;
+}
